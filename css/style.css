@@ -27,3 +27,13 @@ footer{border-top:1px solid #2c2a2e;padding:30px 64px;color:#776f64;font-size:12
 @media(max-width:760px){.brand{padding:70px 20px}.bframe{padding:28px 18px}.bframe::before{right:18px}.bhead{grid-template-columns:1fr;gap:28px;margin-bottom:28px}.lead img{aspect-ratio:3/2}.brow{grid-template-columns:1fr}}
 /* בלי תנועה: רק תמונת הפתיחה הראשונה (main.js לא מפעיל את המצגת), בלי זום ובלי אנימציית הגלילה */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.grid figure:hover img,.grid figure:focus-visible img{transform:none}.cnt{display:none}}
+/* קמפיינים */
+.camps{padding:110px 64px 40px}.camps .chead h2{margin-bottom:10px}.camps .chapter{padding:50px 0}.camps .chapter+.chapter{padding-top:30px}
+.intro{margin:-30px 0 50px}.art{border-top:1px solid #2c2a2e}
+.pgt{line-height:1}.pgt .en{display:block;font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-size:96px;letter-spacing:.02em;color:#e9e3d8}.pgt .sep{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.pgt .he{display:block;font-size:30px;color:#c9a45c;margin-top:14px}
+.pgnote{border-inline-start:2px solid #c9a45c;padding:6px 26px}.pgnote .en{font-family:'Cormorant Garamond';font-style:italic;font-size:22px;color:#c9a45c}.pgnote p{margin:10px 0 0}
+.pgc .bframe{background:#1d1c20;box-shadow:inset 0 0 0 10px #161518}.pgc img{filter:brightness(.9) saturate(.92);transition:filter .5s}.pgc figure:hover img{filter:none}
+.pgc .lead img{object-position:center 40%}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}.pgrid figure{margin:0;overflow:hidden}.pgrid img{width:100%;height:100%;object-fit:cover;aspect-ratio:2/3}.pgrid .w{grid-column:span 2}.pgrid .w img{aspect-ratio:auto}.pgrid .bw{grid-column:span 2}.pgrid .bw img{aspect-ratio:4/3}
+[data-lb],.grid figure{cursor:zoom-in}
+@media(max-width:760px){.camps{padding:80px 20px 20px}.camps .chapter{padding:30px 0}.pgt .en{font-size:60px}.pgt .he{font-size:22px}.pgrid{grid-template-columns:1fr 1fr;gap:10px}.pgrid .w img{aspect-ratio:3/2}.pgrid .bw{grid-column:span 1}.pgrid .bw img{aspect-ratio:2/3}}
