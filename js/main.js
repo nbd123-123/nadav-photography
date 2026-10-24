@@ -8,7 +8,7 @@ bur.onclick=()=>setMenu(!menu.classList.contains('open'));
 menu.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
 addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.classList.contains('open')){setMenu(false);bur.focus()}});
 
-// לייטבוקס – כל פרק (גלריה אישית / מירקה / Playground) הוא קבוצה נפרדת
+// לייטבוקס – כל פרק (גלריה אישית / מירקה / Playground / קלופ) הוא קבוצה נפרדת
 const lb=document.getElementById('lb'),li=document.getElementById('li'),lc=document.getElementById('lc'),x=document.getElementById('x'),pv=document.getElementById('pv'),nxt=document.getElementById('nx');let F=[],cur=0,back=null;
 const G={art:[...document.querySelectorAll('.grid figure')]};document.querySelectorAll('[data-lb]').forEach(f=>(G[f.dataset.lb]=G[f.dataset.lb]||[]).push(f));
 function show(i){cur=(i+F.length)%F.length;const im=F[cur].querySelector('img');li.src=im.src;li.alt=im.alt;lc.textContent=String(cur+1).padStart(2,'0')+' / '+F.length}
